@@ -59,22 +59,22 @@
           <div class="form-addStudents">
         <div class="mb-3">
           <label for="nameStudent" class="form-label">Nombre del estudiante</label>
-          <input type="text" class="form-control" id="nameStudent" aria-describedby="nameStudent">
+          <input type="text" name="nameStudent" class="form-control" id="nameStudent" aria-describedby="nameStudent">
         </div>
         <div class="mb-3">
           <label for="numberDocument" class="form-label">Nº Documento</label>
-          <input type="number" class="form-control" id="numberDocument">
+          <input type="number" name="numberDocument" class="form-control" id="numberDocument">
         </div>
         <div class="mb-3">
             <label for="campus" class="form-label">Sede</label>
-            <input type="text" class="form-control" id="campus">
+            <input type="text" name="campus" class="form-control" id="campus">
           </div>
           <div class="mb-3">
             <label for="workingDay" class="form-label">Jornada</label>
-            <input type="text" class="form-control" id="workingDay">
+            <input type="text" name="workingDay" class="form-control" id="workingDay">
           </div>
     </div>
-    <button type="submit" class="btn btn-primary">Registrar</button>
+    <button type="button" onclick="registerStudent()" class="btn btn-primary">Registrar</button>
       </form>
   </main>
 
