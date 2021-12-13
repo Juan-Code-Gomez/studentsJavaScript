@@ -62,6 +62,10 @@
           <input type="text" name="nameStudent" class="form-control" id="nameStudent" aria-describedby="nameStudent">
         </div>
         <div class="mb-3">
+          <label for="lastName" class="form-label">Apellido del estudiante</label>
+          <input type="text" name="lastName" class="form-control" id="lastName" aria-describedby="lastName">
+        </div>
+        <div class="mb-3">
           <label for="numberDocument" class="form-label">Nº Documento</label>
           <input type="number" name="numberDocument" class="form-control" id="numberDocument">
         </div>
@@ -76,6 +80,42 @@
     </div>
     <button type="button" onclick="registerStudent()" class="btn btn-primary">Registrar</button>
       </form>
+      <div class="table-data">
+      <table class="table table-success table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Numero de documento</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Sede</th>
+            <th scope="col">Jornada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td id="documentStud"></td>
+            <td id="nameStud"></td>
+            <td id="lastNameStud"></td>
+            <td id="campusStud"></td>
+            <td id="workingDayStudent"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div id="nameStud">
+
+      </div>
+      <div id="documentStud">
+
+      </div>
+      <div id="campusStud">
+
+      </div>
+      <div id="workingDayStudent">
+
+      </div>
   </main>
 
     

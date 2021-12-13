@@ -7,21 +7,21 @@
 
 function registerStudent(){
     let nameStudent= document.getElementById("nameStudent").value;
+    let lastName= document.getElementById("lastName").value;
     let numberDocument=document.getElementById("numberDocument").value;
     let campus= document.getElementById("campus").value;
     let workingDay= document.getElementById("workingDay").value;
     
 
-    if (nameStudent == "") {
-        alert("Debes llenar todos los campos");
-    } else if(numberDocument== ""){   
-        alert("Debes llenar todos los campos");
-    }else if(campus==""){
-        alert("Debes llenar todos los campos");
-    }else if(workingDay==""){
+    if (nameStudent == "" || lastName=="" || numberDocument== "" || campus=="" ||  workingDay=="" ) {
         alert("Debes llenar todos los campos");
     }else{
-        alert("Has agregado un estudiante");
+        document.getElementById('nameStud').innerHTML = nameStudent;
+        document.getElementById('lastNameStud').innerHTML = nameStudent;
+        document.getElementById('documentStud').innerHTML = numberDocument;
+        document.getElementById('campusStud').innerHTML = campus;
+        document.getElementById('workingDayStudent').innerHTML = workingDay;
     }
+
 }
 

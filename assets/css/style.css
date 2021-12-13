@@ -81,3 +81,8 @@ a{
   justify-content: space-between;
   padding: 20px;
 }
+
+.table-data{
+  margin-top: 50px;
+  background-color: white;
+}
