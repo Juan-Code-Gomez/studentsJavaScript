@@ -1,5 +1,8 @@
 // Se definen las variables
 
+let data = [];
+
+
 
 
 
@@ -11,16 +14,18 @@ function registerStudent(){
     let numberDocument=document.getElementById("numberDocument").value;
     let campus= document.getElementById("campus").value;
     let workingDay= document.getElementById("workingDay").value;
-    
+
+    data.push(nameStudent, lastName, numberDocument, campus, workingDay);
+    console.log(data);
 
     if (nameStudent == "" || lastName=="" || numberDocument== "" || campus=="" ||  workingDay=="" ) {
         alert("Debes llenar todos los campos");
     }else{
-        document.getElementById('nameStud').innerHTML = nameStudent;
-        document.getElementById('lastNameStud').innerHTML = nameStudent;
-        document.getElementById('documentStud').innerHTML = numberDocument;
-        document.getElementById('campusStud').innerHTML = campus;
-        document.getElementById('workingDayStudent').innerHTML = workingDay;
+        document.getElementById('nameStud').innerHTML = data[0];
+        document.getElementById('lastNameStud').innerHTML = data[1];
+        document.getElementById('documentStud').innerHTML = data[2];
+        document.getElementById('campusStud').innerHTML = data[3];
+        document.getElementById('workingDayStudent').innerHTML = data[4];
     }
 
 }
